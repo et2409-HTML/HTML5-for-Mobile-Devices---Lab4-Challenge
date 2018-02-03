@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab4 Challenge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <style>
+            #round{
+                border-radius: 15%;
+            }
+            
+            #footer{
+                position: fixed;
+                text-align: center;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;             
+             }
+         </style>
+
+    </head>
+    <body>
+        <div data-role="page" class="ui-content">
+            <div data-role="header">
+                <h1>JQuery Mobile Basics</h1>
+            </div> <!-- end header -->
+            
+            <div data-role="main">
+                <button class="ui-btn">I'm a button.</button>
+                <a href="http://www.jquerymobile.com" class="ui-btn" target="blank">I'm a link.</a>
+                <button id="round" class="ui-btn ui-corner-all">Round Button</button>
+                <button id="shadow" class="ui-btn ui-shadow">Shadow Button</button>
+                
+                <div id="popupWindow" data-role="popup">
+                    <div data-role="header">
+                        <h1>Wait for it..</h1>
+                    <div data-role="main" class="ui-content">
+                        <p>I am a POPUP!! Thank you for choosing me.</p>
+                    <div data-role="footer">
+                        <h1>Lab 4 Challenge</h1>    
+                
+                    </div> <!-- end popup footer -->
+                    </div> <!-- end popup main -->
+                    </div> <!-- end popup header -->     
+                
+                </div> <!-- end popup -->
+
+            </div> <!-- end main -->
+            
+            <a href="#popupWindow" data-rel="popup" class="ui-btn">Popup</a>
+            
+            <div id="footer" data-role="footer">
+                <h1>Lab 4 Challenge</h1>
+                <p>Copyright &copy; 2018<?php echo date("Y");?></p>
+        
+            </div> <!-- end footer -->
+        </div>
+    
+    
+    </body>
+    
+</html>
